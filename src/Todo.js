@@ -14,7 +14,7 @@ const Todo = ({ todo, removeTodo }) => {
       {text}
     </li>
   );
-}
+};
 
 Todo.propTypes = {
   todo: PropTypes.shape({

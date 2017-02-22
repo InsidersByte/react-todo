@@ -12,14 +12,14 @@ class App extends Component {
 
   onChange = (event) => {
     this.setState({ todo: event.target.value });
-  }
+  };
 
   addTodo = (event) => {
     event.preventDefault();
 
     const todo = { id: this.state.todos.length, text: this.state.todo };
     this.setState({ todos: [todo, ...this.state.todos], todo: '' });
-  }
+  };
 
   removeTodo = (todo) => {
     const { id } = todo;
@@ -27,7 +27,7 @@ class App extends Component {
     const todos = this.state.todos.filter(todo => todo.id !== id);
 
     this.setState({ todos });
-  }
+  };
 
   render() {
     const { todos, todo } = this.state;
