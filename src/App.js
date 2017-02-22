@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Title from './Title';
-import TodoForm from './TodoForm';
-import TodoList from './TodoList';
+import Title from './components/Title';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 import './App.css';
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
     event.preventDefault();
 
     const todo = { id: this.state.todos.length, text: this.state.todo };
+
     this.setState({ todos: [todo, ...this.state.todos], todo: '' });
   };
 
