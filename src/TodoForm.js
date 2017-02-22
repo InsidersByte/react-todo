@@ -7,6 +7,7 @@ const TodoForm = ({ todo, onChange, addTodo }) => (
       className="input"
       value={todo}
       onChange={onChange}
+      placeholder="What needs to be done?"
     />
   </form>
 );

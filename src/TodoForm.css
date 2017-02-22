@@ -5,6 +5,7 @@
   colour: #555;
   border: 1px solid #ccc;
   border-radius: 4px;
+  min-width: 250px;
 }
 
 input:hover {
